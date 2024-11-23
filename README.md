@@ -33,53 +33,6 @@ You can customize Grafana by editing the docker-compose.yml file. Here are some 
 GF_SECURITY_ADMIN_USER: Set the admin username (default: admin).
 GF_SECURITY_ADMIN_PASSWORD: Set the admin password (default: admin).
 GF_USERS_ALLOW_SIGN_UP: Enable or disable user sign-ups (default: false).
-Volume Mapping
-Grafana data is persisted using Docker volumes. Ensure that the grafana_data volume is backed up regularly to avoid data loss.
-
-
-اینجا یک فایل README.md برای Grafana ارائه شده که توضیحات کامل برای نصب، تنظیم و استفاده از آن را در یک محیط Docker فراهم می‌کند:
-
-markdown
-Copy code
-# Grafana Monitoring Dashboard
-
-Grafana is an open-source analytics and interactive visualization platform. It provides dashboards for metrics collected from various data sources like Prometheus, Loki, and more.
-
----
-
-## 📦 Setup Instructions
-
-### Prerequisites
-- Docker and Docker Compose installed on your system.
-- Basic knowledge of Docker containers and networking.
-
-### Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo/grafana-setup.git
-   cd grafana-setup
-Start the Grafana service using Docker Compose:
-
-bash
-Copy code
-docker-compose up -d
-Access Grafana in your browser at:
-
-arduino
-Copy code
-http://<YOUR_SERVER_IP>:3000
-Login with the default credentials:
-
-Username: admin
-Password: admin (You will be prompted to change the password upon first login.)
-
-🛠 Configuration
-Environment Variables
-You can customize Grafana by editing the docker-compose.yml file. Here are some key environment variables:
-
-GF_SECURITY_ADMIN_USER: Set the admin username (default: admin).
-GF_SECURITY_ADMIN_PASSWORD: Set the admin password (default: admin).
-GF_USERS_ALLOW_SIGN_UP: Enable or disable user sign-ups (default: false).
 
 Volume Mapping
 Grafana data is persisted using Docker volumes. Ensure that the grafana_data volume is backed up regularly to avoid data loss.
