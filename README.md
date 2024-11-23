@@ -13,5 +13,5 @@ Grafana is an open-source analytics and interactive visualization platform. It p
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/grafana-setup.git
-   cd grafana-setup
+   git clone https://github.com/ashkanramedani/grafana.git
+   cd grafana
