@@ -14,11 +14,9 @@ Prometheus is an open-source systems monitoring and alerting toolkit designed fo
 1. Clone the repository:
    ```bash
    git clone https://github.com/ashkanramedani/grafana.git
-   cd prometheus-monitoring
+   cd grafana
 
 2. Start the services using Docker Compose:
    docker-compose up -d
-3. Access Prometheus at:
-   http://<YOUR_SERVER_IP>:3000
-4. Add Grafana (if included) and access it at:
+3. Access Grafana:
    http://<YOUR_SERVER_IP>:3000
