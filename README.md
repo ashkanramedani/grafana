@@ -13,7 +13,7 @@ Prometheus is an open-source systems monitoring and alerting toolkit designed fo
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/prometheus-monitoring.git
+   git clone https://github.com/ashkanramedani/grafana.git
    cd prometheus-monitoring
 
 2. Start the services using Docker Compose:
