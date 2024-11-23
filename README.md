@@ -1,6 +1,6 @@
-# Prometheus Monitoring
+# Grafana Monitoring Dashboard
 
-Prometheus is an open-source systems monitoring and alerting toolkit designed for reliability and scalability. This setup includes Prometheus, Node Exporter, and Grafana for monitoring system resources.
+Grafana is an open-source analytics and interactive visualization platform. It provides dashboards for metrics collected from various data sources like Prometheus, Loki, and more.
 
 ---
 
@@ -8,15 +8,10 @@ Prometheus is an open-source systems monitoring and alerting toolkit designed fo
 
 ### Prerequisites
 - Docker and Docker Compose installed on your system.
-- Basic knowledge of Docker and networking.
+- Basic knowledge of Docker containers and networking.
 
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/ashkanramedani/grafana.git
-   cd grafana
-
-2. Start the services using Docker Compose:
-   docker-compose up -d
-3. Access Grafana:
-   http://<YOUR_SERVER_IP>:3000
+   git clone https://github.com/your-repo/grafana-setup.git
+   cd grafana-setup
