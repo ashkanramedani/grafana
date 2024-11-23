@@ -17,12 +17,15 @@ Grafana is an open-source analytics and interactive visualization platform. It p
    cd grafana
 
 2. Start the Grafana service using Docker Compose:
+   ```bash
    docker-compose up -d
 
-3. Access Grafana in your browser at:
+4. Access Grafana in your browser at:
+   ```bash
    http://<YOUR_SERVER_IP>:3000
 
-4. Login with the default credentials:
+5. Login with the default credentials:
+   ```bash
    Username: admin
    Password: admin
 
@@ -36,18 +39,20 @@ GF_USERS_ALLOW_SIGN_UP: Enable or disable user sign-ups (default: false).
 
 ### Volume Mapping
 Grafana data is persisted using Docker volumes. Ensure that the grafana_data volume is backed up regularly to avoid data loss.
-volumes:
-  - grafana_data:/var/lib/grafana
+   ```bash
+   volumes:
+     - grafana_data:/var/lib/grafana
 
 ### Data Sources
 To add data sources automatically, use Grafana's provisioning feature. Add a file under grafana/provisioning/datasources/ with the following structure:
-apiVersion: 1
-datasources:
-  - name: Prometheus
-    type: prometheus
-    access: proxy
-    url: http://prometheus:9090
-    isDefault: true
+   ```bash
+   apiVersion: 1
+   datasources:
+     - name: Prometheus
+       type: prometheus
+       access: proxy
+       url: http://prometheus:9090
+       isDefault: true
     
 Restart the Grafana container to apply these changes.
 
